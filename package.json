@@ -10,7 +10,8 @@
   "type": "commonjs",
   "scripts": {
     "lint": "eslint ./lib",
-    "start": "node --experimental-strip-types ./example/index.mjs"
+    "start": "node --experimental-strip-types ./example/index.mjs",
+    "test": "node ./proof/check.mjs"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,8 @@
   },
   "homepage": "https://github.com/oddhill/node-bankid",
   "dependencies": {
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "undici": "^7.5.0"
   },
   "devDependencies": {
     "@types/node": "^22",
